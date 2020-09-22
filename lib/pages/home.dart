@@ -48,21 +48,20 @@ class _HomeState extends State<Home> {
               child: Text('Número de registro: 14', style: TextStyle(fontSize: 0.06*rsp),),
             ),
             Container(padding: EdgeInsets.fromLTRB(0.04*rsp, 0.05*rsp, 0.0, 0.0),
-              child: Row(
-                children: [
-                  Container(width: 0.925*rsp, height: 0.2*rsp,decoration: styleContainer(context), margin: EdgeInsets.fromLTRB(0.0*rsp, 0.0, 0.0, 0.0),
-                    child: Row(
-                      children: [
-                        Container( width: 0.65*rsp,
-                          margin: EdgeInsets.fromLTRB(0.06*rsp, 0.0, 0.0, 0.0),
-                          child: DropdownButton<String>(
-                            value: dropdownValue, icon: Icon(Icons.keyboard_arrow_down), iconSize: 24, elevation: 16,
-                            style: TextStyle(color: Color.fromRGBO(58, 137, 45, 1.0), fontSize: 0.06*rsp),
-                            underline: Container(
-                              height: 2, color: Color.fromRGBO(58, 137, 45, 1.0),
-                            ),
-                            items: <String>[
-                              'Nombre del Cliente', 
+              child: 
+                Container(width: 0.925*rsp, height: 0.2*rsp,decoration: styleContainer(context), margin: EdgeInsets.fromLTRB(0.0*rsp, 0.0, 0.0, 0.0),
+                  child: Row(
+                    children: [
+                      Container( width: 0.65*rsp,
+                        margin: EdgeInsets.fromLTRB(0.06*rsp, 0.0, 0.0, 0.0),
+                        child: DropdownButton<String>(
+                          value: dropdownValue, icon: Icon(Icons.keyboard_arrow_down), iconSize: 24, elevation: 16,
+                          style: TextStyle(color: Color.fromRGBO(58, 137, 45, 1.0), fontSize: 0.06*rsp),
+                          underline: Container(
+                            height: 2, color: Color.fromRGBO(58, 137, 45, 1.0),
+                          ),
+                          items: <String>[
+                            'Nombre del Cliente', 
                               'Fernando Herrera', 
                               'Raúl Hernandez', 
                               'Rommel Humberto']
