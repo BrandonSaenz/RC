@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:recicladora_california/styles.dart';
 
-class Home extends StatefulWidget {
+class Home2 extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _Home2State createState() => _Home2State();
 }
 
-class _HomeState extends State<Home> {
+class _Home2State extends State<Home2> {
   Size media; double rsp; Color colorTheme=Color.fromRGBO(58, 137, 45, 1.0); 
   Color colorDark=Color.fromRGBO(32, 32, 32, 1.0); 
   Icon add=Icon(Icons.add_box, size: 50, color: Color.fromRGBO(32, 32, 32, 1.0));
@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
             FlatButton(
               child: new Text("Aceptar", style: TextStyle(color: colorTheme),),
               onPressed: () {
-                Navigator.pushReplacementNamed(context, 'home2');
+                Navigator.of(context).pop();
               },
             )
           ],
@@ -93,13 +93,14 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(58, 137, 45, 1.0),
         title: Center(child: Text('ADMINISTRACIÓN DE CONTENEDORES',  style: TextStyle(fontSize: 0.044*rsp))),
+        leading: Container(),
       ),
       body: Container(
         child: ListView(
           children:[
             Container(
               margin: EdgeInsets.fromLTRB(0.0, 0.06*rsp, 0.0, 0.0*rsp),
-              child: Text('Número de registro: 14', style: TextStyle(fontSize: 0.06*rsp), textAlign: TextAlign.center,),
+              child: Text('Número de registro: 15', style: TextStyle(fontSize: 0.06*rsp), textAlign: TextAlign.center,),
             ),
             Divider(height: 0.1*rsp, color: Color.fromRGBO(58, 137, 45, 1.0), thickness: 0.002*rsp,),
             Container(
